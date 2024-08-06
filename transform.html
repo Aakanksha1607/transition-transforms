@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           width:600px;
+           height:600px;
+           border:5px solid rgb(125, 125, 129);
+           border-radius: 50px;
+           text-align: center;
+           padding:20px; 
+           margin-left:200px;  
+           box-shadow: 25px 25px 25px rgb(14, 14, 14);
+        }
+       .img1{
+        width:150px;
+       height:150px;
+       padding-right:300px;
+       }
+       .img2{
+        width: 100px;
+        height:100px;
+        padding-left:130px;
+        padding-top:90px;
+       }
+       button{
+         width:120px;
+         height:60px;
+         font-size: larger;
+         background-color: rgb(251, 126, 182);
+         border-radius: 20px; 
+         border: 2px solid black;
+         box-shadow: 10px 10px 10px grey;
+       }
+         button:hover{
+           cursor: pointer;
+           background-color: cadetblue;
+         }
+        div >.b1:hover~img{
+       transition: all 5s ease;
+       transform:translate( 100px , 100px);
+       }
+       div > .b2:hover~img{
+       transition: all 3s ease-out;
+       transform:rotate( 360deg); 
+       }
+       div >.b3:hover ~ img{
+        transform:scale(1.2,2); 
+        transition: all 3s ease-in-out;
+       }
+       div >.b4:hover ~ img{
+        transform:skew( 3600deg,3600deg); 
+        transition: all 1s ease;
+       } 
+    </style>
+</head>
+<body>
+    <div>
+        <button class="b1">Translate</button>
+        <button class="b2">Rotate</button>
+        <button class="b3">Scale</button>
+        <button class="b4">Skew</button>
+      <img class="img2" src="https://img.freepik.com/free-vector/star-filled-outline-red_78370-6630.jpg" alt=""> <br><br><br>
+       <img class="img1" src="https://img.freepik.com/free-vector/star-cartoon-style_78370-3904.jpg" alt="">
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            height:540px;
+            text-align: center;
+            border:10px solid gray;
+            padding:20px;
+           margin-left:300px; 
+           box-shadow: 20px 20px 20px rgb(17, 17, 17);
+           border-radius: 20px;
+            /* background-color: aquamarine; */
+        }
+         p{
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(208, 150, 233);
+            color: rgb(75, 139, 40);
+        } 
+        button{
+            width:120px;
+            height:60px;
+            font-size: larger; 
+            background-color: rgb(218, 52, 85);   
+            color: aqua;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px rgb(61, 60, 62);
+            /* transition:all 2s; */
+        }
+        button:hover{
+            background-color: burlywood;
+            height:60px;
+        }
+        img{
+            width:250px;
+           padding:100px; 
+        }
+        .container >.a:hover ~ img{
+            transition:all 2s;
+            transform: rotate(560deg);
+        }
+        .container >.b:hover ~ img{
+            transition:all 3s ease;
+            transform: rotate(1000deg);
+        }
+        .container >.c:hover ~ img{
+            transition:all 1s ease-in;
+            transform: rotate(1300deg);
+        }
+        .container >.d:hover ~ img{
+            transition:all 2s;
+            transform: rotate(56000deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>To increase fan speed... Please, click the below numbers to adjust its speed</p> 
+        <button class="a">1 <br>Slow</button>
+        <button class="b">2 <br> Medium</button>
+        <button class="c">3 <br> Fast</button>
+        <button class="d">4 <br> very Fast</button>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJzKbquHf0_l3N5q1kwy-M_1cXjAv_h94iQ&s" alt="">
+    </div>
+</body>
+</html>
